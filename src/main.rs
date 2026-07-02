@@ -4,7 +4,6 @@ use axum::{
     routing::{get, post},
     Router,
 };
-use sqlx::PgPool;
 use tower_http::{
     cors::CorsLayer,
     trace::TraceLayer,
