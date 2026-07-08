@@ -27,6 +27,7 @@ pub struct Post {
     pub title: String,
     pub content: String,
     pub user_id: Uuid,
+    pub published: bool,
     pub created_at: DateTime<Utc>,
     pub updated_at: DateTime<Utc>,
 }
@@ -40,6 +41,7 @@ pub struct PostWithAuthor {
     pub title: String,
     pub content: String,
     pub user_id: Uuid,
+    pub published: bool,
     pub created_at: DateTime<Utc>,
     pub updated_at: DateTime<Utc>,
     pub author_name: String,
